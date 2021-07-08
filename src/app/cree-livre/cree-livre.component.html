@@ -1,0 +1,7 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label>Titre</label><input type="text" [formControl]="fTitre"/><br>
+    <label>Auteur/label><input type="text" [formControl]="fAuteur"/><br>
+    <label>Date</label><input type="text" [formControl]="fDate"/><br>
+    <label>Type</label><input type="text" [formControl]="fType"/><br>
+    <button type="submit" [disabled]="!form.valid">Créer </button>
+</form>
